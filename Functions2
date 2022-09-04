@@ -13,7 +13,7 @@ void askYesOrNoQuestion();
 int main()
 
 {
-	
+	//Asks user to enter y or n nad then returns the responce.
 	askYesOrNoQuestion();
 
 	system("pause");
@@ -23,17 +23,20 @@ int main()
 void welcome()
 
 {
+	//Welcome the user to the program.
 	cout << "Welcome! \n";
 }
 
 string getYesNo()
 
 {
-
+	//Ask the user y or n?
 	cout << "Please answer: yes or no. \n";
-	
+
+	// String variable to store the responce.
 	string responce;
 
+	//Get input from the user via keyboard.
 	cin >> responce;
 
 	return responce;
@@ -42,7 +45,7 @@ string getYesNo()
 void printResponce(string responceToPrint)
 
 {
-
+	//Print the responce to the screen.
 	cout << "Your answer was:" << responceToPrint << endl;
 }
 
