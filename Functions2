@@ -4,22 +4,17 @@ using namespace std;
 
 void welcome();
 
-char getYesNo();
+string getYesNo();
 
-void printResponce(char responceToPrint);
+void printResponce(string responceToPrint);
 
+void askYesOrNoQuestion();
 
 int main()
 
 {
-	welcome();
-
-	char answer = getYesNo();
-
-	printResponce(answer);
-
-
-
+	
+	askYesOrNoQuestion();
 
 	system("pause");
 
@@ -31,21 +26,32 @@ void welcome()
 	cout << "Welcome! \n";
 }
 
-char getYesNo()
+string getYesNo()
 
 {
 
-	cout << "Please answer: y or n. \n";
-	char responce;
+	cout << "Please answer: yes or no. \n";
+	
+	string responce;
 
 	cin >> responce;
 
 	return responce;
 	
 }
-void printResponce(char responceToPrint)
+void printResponce(string responceToPrint)
 
 {
 
 	cout << "Your answer was:" << responceToPrint << endl;
+}
+
+void askYesOrNoQuestion()
+
+{
+	welcome();
+
+	string answer = getYesNo();
+
+	printResponce(answer);
 }
