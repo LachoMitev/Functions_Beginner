@@ -1,57 +1,11 @@
-#include <iostream>
+//Asks user to enter yes or no and then returns the responce.
 
-using namespace std;
+	//Ask the user yes or no?
 
-void welcome();
 
-string getYesNo();
+	// String variable to store the responce.
 
-void printResponce(string responceToPrint);
-
-void askYesOrNoQuestion();
-
-int main()
-
-{
+	//Get input from the user via keyboard.
 	
-	askYesOrNoQuestion();
+	//Print the responce to the screen.
 
-	system("pause");
-
-}
-
-void welcome()
-
-{
-	cout << "Welcome! \n";
-}
-
-string getYesNo()
-
-{
-
-	cout << "Please answer: yes or no. \n";
-	
-	string responce;
-
-	cin >> responce;
-
-	return responce;
-	
-}
-void printResponce(string responceToPrint)
-
-{
-
-	cout << "Your answer was:" << responceToPrint << endl;
-}
-
-void askYesOrNoQuestion()
-
-{
-	welcome();
-
-	string answer = getYesNo();
-
-	printResponce(answer);
-}
